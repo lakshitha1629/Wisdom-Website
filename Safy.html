@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SafyLite</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    </head>
+
+    <body>
+        <!--Navigation bar-->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+
+                    <a class="navbar-brand" href="Safy.html">Wis<span>Dom</span></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#About_us">About us</a></li>
+                        <li><a href="#Time_Table">Time Table</a></li>
+                        <li><a href="#Teachers">Teachers</a></li>
+                        <li><a href="#Facilities">Facilities</a></li>
+                        <li class="btn-trial"><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--/ Navigation bar-->
+        <!--Modal box-->
+        <div class="modal fade" id="login" role="dialog">
+            <div class="modal-dialog modal-sm">
+
+                <!-- Modal content no 1-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title text-center form-title">Login</h4>
+                    </div>
+                    <div class="modal-body padtrbl">
+
+                        <div class="login-box-body">
+                            <p class="login-box-msg">Sign in to start SafyLite</p>
+                            <div class="form-group">
+                                <form>
+                                    <div class="form-group has-feedback">
+                                        <!----- username -------------->
+                                        <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" />
+                                        <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
+                                        <!---Alredy exists  ! -->
+                                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <!----- password -------------->
+                                        <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />
+                                        <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
+                                        <!---Alredy exists  ! -->
+                                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="checkbox icheck">
+                                                <label>
+                                                    <input type="checkbox" id="loginrem" > Remember Me
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--/ Modal box-->
+        <!--Banner-->
+        <div class="banner">
+            <div class="bg-color">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="banner-text text-center">
+                            <div class="intro-para text-center quote">
+                                <img src="img/SafyLite_Logo.png">
+
+                            </div>
+                            <div class="intro-para text-center quote">
+                                <input style="margin-left: 284px; width: 50%;" type="text" class="form-control" placeholder="Search subject or teacher name">
+                                <a href="#" class="btn get-quote">SEARCH</a>
+                            </div>
+                            <a href="#footer" class="mouse-hover">
+                                <div class="mouse"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ Banner-->
+
+        <!--About_us-->
+        <section id="About_us" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="header-section text-center">
+                        <h2>About us</h2>
+                        <hr class="bottom-line">
+                        <hr><br><h4>OUR VISION</h4>
+                        <p>“To be the foremost educational institute in Sri Lanka To produce high calibre students.”</p>
+                        <br>
+                    </div>
+
+                    <div class="fea">
+                        <div class="col-md-5">
+                            <div class="heading pull-right">
+                                <h4>OUR MISSION</h4>
+                                <p>“To guide our students towards the fortunes of knowledge.
+                                    To produce winners amongst winners as well as disciplined all-round individuals with respectable social values.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fea">
+                        <div class="col-md-7">
+                            <div class="heading pull-right">
+                                <h4>WHO WE ARE</h4>
+                                <p style="text-align: justify;">Established in 1999, as a secondary educational institute catering to the young individuals waiting to contribute to the growth of the country, “WISDOM” is perhaps the most common name that comes to the minds of both parents and students in search of assistance in studies.
+                                    Over the years our institute has produced some of the top scoring students in the Island in the Science, Mathematics, Commerce and Art streams who not only have the subject knowledge but also are talented in applying it in real life situations.   
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--About_us-->
+
+
+        <!--Time_Table-->
+        <section id="Time_Table" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="header-section text-center">
+                        <h2>Time Table</h2>
+                        <p>Find below schedules of Classes</p> 
+                        <hr class="bottom-line">
+                        <div class="col-md-10">
+                            <div class="heading pull-right">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#menu1">A/L</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#menu2">O/L</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#menu3">Other classes</a>
+                                    </li>
+                                </ul>
+                            </div></div></div>
+                    <div class="fea">
+                        <div class="col-md-10">
+                            <div class="heading pull-right">
+                                <div class="tab-content">
+                                    <div id="menu1" class="tab-pane active"><br>
+                                        <h3><strong>SCIENCE – MATHS</strong></h3>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <td>
+                                                        <h5>Subject</h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5>Lecturer</h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5>Day &amp; Time</h5>
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Biology</td>
+                                                    <td>Dr Hiran Amarasekara</td>
+                                                    <td>Saturday – from 12.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Combined Maths</td>
+                                                    <td>Sadun Wanaguru</td>
+                                                    <td>Saturday – 1.00 -5.00 PM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Physics</td>
+                                                    <td>Asela Ranasingha</td>
+                                                    <td>Saturday – 11.30-01.30 PM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Chemistry</td>
+                                                    <td>Chamal Iddagodage</td>
+                                                    <td>Tuesday – 03.30 – 06.30 PM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>&nbsp;</p>
+                                        <h3><strong>COMMERCE</strong></h3>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <td>
+                                                        <h5>Subject</h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5>Lecturer</h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5>Starting Day &amp; Time</h5>
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody> 
+                                                <tr>
+                                                    <td>Accounting</td>
+                                                    <td>Thushara Nakandala</td>
+                                                    <td>Monday – 3.00 – 5.30 PM</td>
+                                                </tr>
+                                                <tr class="high-light">
+                                                    <td>Econ </td>
+                                                    <td>Lasitha Fernando</td>
+                                                    <td>Wednesday – 4.45 – 06.30 PM</td>
+                                                </tr>
+                                                <tr class="high-light-blue">
+                                                    <td>BS </td>
+                                                    <td>Kumara Pathirana</td>
+                                                    <td>Wednesday – 2.45 – 4.30 PM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>&nbsp;</p>
+
+                                        <h3>ARTS</h3>
+                                        <table class="table ">
+                                            <thead>
+                                                <tr>
+                                                    <td>
+                                                        <h5>Subject</h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5>Lecturer</h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5>Starting Day &amp; Time</h5>
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Maths</td>
+                                                    <td>Sadun Wanaguru</td>
+                                                    <td>Saturday – 1.00 -5.00 PM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Political</td>
+                                                    <td>Senadhi Athukorala</td>
+                                                    <td>Saturday – 10.00 – 12.00 PM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sinhala</td>
+                                                    <td>Mahinda Sri Jayalath</td>
+                                                    <td>Saturday – 8.00 – 10.00 AM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                    <div id="menu2" class=" tab-pane fade"><br>
+                                        <table class="table ">
+                                            <thead>
+                                                <tr>
+                                                    <td>
+                                                        <h5>Subject</h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5>Lecturer</h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5>Starting Day &amp; Time</h5>
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Sinhala</td>
+                                                    <td>Anuradha Abeysekara</td>
+                                                    <td>Thursday – 03.00 – 05.00 PM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Maths</td>
+                                                    <td>Mahinda Sri Jayalath</td>
+                                                    <td>Saturday – 8.00 – 10.00 AM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Science</td>
+                                                    <td>Senadhi Athukorala</td>
+                                                    <td>Saturday – 10.00 – 12.00 PM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>History</td>
+                                                    <td>Anuradha Abeysekara</td>
+                                                    <td>Thursday – 03.00 – 05.00 PM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>&nbsp;</p> 
+
+                                    </div>
+                                    <div id="menu3" class=" tab-pane fade"><br>
+                                        <h3><strong>Grade 9</strong></h3>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <td>
+                                                        <h5>Subject</h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5>Lecturer</h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5>Day &amp; Time</h5>
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Sinhala</td>
+                                                    <td>Hiran Amarasekara</td>
+                                                    <td>Saturday – from 12.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Maths</td>
+                                                    <td>Sadun Wanaguru</td>
+                                                    <td>Saturday – 1.00 -5.00 PM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>&nbsp;</p>  
+                                        <h3><strong>Grade 8</strong></h3>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <td>
+                                                        <h5>Subject</h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5>Lecturer</h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5>Day &amp; Time</h5>
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Sinhala</td>
+                                                    <td>Hiran Amarasekara</td>
+                                                    <td>Saturday – from 12.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Maths</td>
+                                                    <td>Sadun Wanaguru</td>
+                                                    <td>Saturday – 1.00 -5.00 PM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>&nbsp;</p>  
+                                        <h3><strong>Grade 7</strong></h3>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <td>
+                                                        <h5>Subject</h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5>Lecturer</h5>
+                                                    </td>
+                                                    <td>
+                                                        <h5>Day &amp; Time</h5>
+                                                    </td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Sinhala</td>
+                                                    <td>Hiran Amarasekara</td>
+                                                    <td>Saturday – from 12.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Maths</td>
+                                                    <td>Sadun Wanaguru</td>
+                                                    <td>Saturday – 1.00 -5.00 PM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>&nbsp;</p>  
+                                    </div>
+                                </div>
+
+                            </div></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!--/ Time_Table-->
+
+
+        <!--Teachers-->
+        <section id="Teachers" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="header-section text-center">
+                        <h2>Our Teachers</h2>
+                        <p style="padding-left: 66px;padding-right: 66px;">Our lecturers are qualified, well experienced and recognized in their respective fields. The staff at Sakya are committed to
+                            guiding the students through the subjects and in attaining high grades at the exams.</p>
+
+                        <hr class="bottom-line">
+
+
+                    </div>
+                    <div class="fea">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-5">
+                            <div class="heading pull-right">
+                                <table class="table table-primary">
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                <h5>Subject</h5>
+                                            </td>
+                                            <td>
+                                                <h5>Lecturer</h5>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Sinhala</td>
+                                            <td>Hiran Amarasekara</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maths</td>
+                                            <td>Sadun Wanaguru</td> 
+                                        </tr>
+                                        <tr>
+                                            <td>Biology</td>
+                                            <td>Dr Hiran Amarasekara</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Combined Maths</td>
+                                            <td>Sadun Wanaguru</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Physics</td>
+                                            <td>Asela Ranasingha</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chemistry</td>
+                                            <td>Chamal Iddagodage</td>
+                                        </tr>    
+                                        <tr>
+                                            <td>Accounting</td>
+                                            <td>Thushara Nakandala</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Econ </td>
+                                            <td>Lasitha Fernando</td>
+                                        </tr>
+                                        <tr>
+                                            <td>BS </td>
+                                            <td>Kumara Pathirana</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>&nbsp;</p>   
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Teachers-->
+
+        <!--Facilities-->
+        <section id="Facilities" class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="header-section text-center">
+
+                        <h2>Our Facilities</h2>
+                        <p style="padding-left: 66px;padding-right: 66px;">We provide a well equipped institute with state of the art facilities, starting from classrooms to the nitty-gritty’s to make the studying
+                            experience of our students an easy and a well facilitated one. Parents are assured of the safety of their children at “WISDOM” and discipline is of utmost importance to us.
+                        </p>
+                        <hr class="bottom-line">
+                        <div class="col-md-10">
+                            <div class="heading pull-right">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item table-info">
+                                        <a class="nav-link active" data-toggle="tab" href="#fmenu1">Lecture Halls</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#fmenu2">Bar Coded</a>
+                                    </li> 
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#fmenu3">Finding Location</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#fmenu4">Checking Attendance</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#fmenu5">Checking Results</a>
+                                    </li>
+                                </ul>
+                            </div></div>
+                    </div>
+
+                    <div class="fea">
+                        <div class="col-md-10">
+                            <div class="heading pull-right">
+                                <div class="tab-content">
+                                    <div id="fmenu1" class="tab-pane active"><br>
+                                        <table class="table">
+                                            <tr>
+                                                <td>
+                                                    <br>
+                                                    <img src="img/Class.jpg" width="400" height="200">
+                                                </td>
+                                                <td>
+                                                    <br><br>
+                                                    <h4 style="text-align: center;">Lecture Halls</h4>
+                                                    <p style="text-align: justify;">&nbsp;&nbsp;&nbsp;The lecture halls at our institute are spacious and contain comfortable seating arrangements to accommodate a large audience. 
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div id="fmenu2" class=" tab-pane fade"><br>
+                                        <table class="table">
+                                            <tr>
+                                                <td>
+                                                    <br>
+                                                    <img src="img/Bar-coded.jpg" width="400" height="200">
+                                                </td>
+                                                <td>
+                                                    <br><br>
+                                                    <h4 style="text-align: center;">Bar-coded Attendance Recording System</h4>
+                                                    <p style="text-align: justify;">&nbsp;&nbsp;&nbsp;Attendance of each student is recorded using a bar-coded recording system which is also used to keep track of the payments made for classes.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div id="fmenu3" class=" tab-pane fade"><br>
+                                        <table class="table">
+                                            <tr>
+                                                <td>
+                                                    <br>
+                                                    <img src="img/Location.jpg" width="400" height="200">
+                                                </td>
+                                                <td>
+                                                    <br><br>
+                                                    <h4 style="text-align: center;">Finding Location</h4>
+                                                    <p style="text-align: justify;">&nbsp;&nbsp;&nbsp;
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div id="fmenu4" class=" tab-pane fade"><br>
+                                        <table class="table">
+                                            <tr>
+                                                <td>
+                                                    <br>
+                                                    <img src="img/attendens.jpg" width="400" height="200">
+                                                </td>
+                                                <td>
+                                                    <br><br>
+                                                    <h4 style="text-align: center;">Checking Attendance</h4>
+                                                    <p style="text-align: justify;">&nbsp;&nbsp;&nbsp;
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div id="fmenu5" class=" tab-pane fade"><br>
+                                        <table class="table">
+                                            <tr>
+                                                <td>
+                                                    <br>
+                                                    <img src="img/CheckingResults.jpg" width="400" height="200">
+                                                </td>
+                                                <td>
+                                                    <br><br>
+                                                    <h4 style="text-align: center;">Checking Results</h4>
+                                                    <p style="text-align: justify;">&nbsp;&nbsp;&nbsp;
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Facilities-->
+
+        <!--Footer-->
+        <footer id="footer" class="footer">
+            <div class="container text-lg-left"> 
+                <div class="col-md-6 col-lg-push-2">
+                    <div class="heading pull-right">
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+
+                        <p>
+                            <i class="fa fa-home mr-3"></i> Keppetipola Road, Badulla</p>
+                        <p>
+                            <i class="fa fa-envelope mr-3"></i> wisdom@gmail.com</p>
+                        <p>
+                            <i class="fa fa-phone mr-3"></i> + 011 2 345 788</p>
+                        <p>
+                            <i class="fa fa-print mr-3"></i> + 011 2 345 789</p>
+
+                    </div></div>
+                <div class="col-md-6">
+                    <div class="heading pull-left">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15840.542375789593!2d81.0551706!3d6.9933068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x16a92f593fb72d1a!2zVXZhIFdpc2RvbSB8IOC2jOC3gCDgt4Dgt5Lgt4Pgt4rgtqngtrjgt4o!5e0!3m2!1sen!2slk!4v1540644417857" width="350" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <br><br></div> 
+                </div> 
+                <!-- Grid column -->
+                <div class="container text-center">
+                    <!-- End newsletter-form -->
+                    <ul class="social-links">
+                        <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+                        <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+                    </ul>
+                    ©2018 SafyLite. All rights reserved
+                    <div class="credits">
+                        Designed by Group Project II (Group No.05)
+                    </div>
+                </div>
+        </footer>
+        <!--/ Footer-->
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="contactform/contactform.js"></script>
+
+    </body>
+
+</html>
