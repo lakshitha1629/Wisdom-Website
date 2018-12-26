@@ -91,12 +91,12 @@
 
                                 <form id="loginform" method="post">
                                     <div class="form-group has-feedback">
-                                        <!----- username -------------->
+                                        
                                         <input class="form-control" placeholder="Username" type="text" id="username">
                                         <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
                                     </div>
                                     <div class="form-group has-feedback">
-                                        <!----- password -------------->
+                                        
                                         <input class="form-control" placeholder="Password" type="password" id="password">
                                         <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
                                     </div>
